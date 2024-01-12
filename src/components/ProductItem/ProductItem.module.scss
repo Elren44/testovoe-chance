@@ -1,0 +1,47 @@
+.item {
+  display: flex;
+  flex-direction: column;
+  &__body {
+    flex: 0 1 100%;
+    display: flex!important;
+    flex-direction: column;
+  }
+  &__img {
+    min-height: 240px;
+    height: 240px;
+    transition: all .2s ease-in-out;
+    &:hover {
+      scale: 1.2;
+    }
+  }
+  &__content {
+    flex: 1 1 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+
+  }
+  &__title {
+    flex: 0 1 100%;
+    margin-bottom: 15px;
+  }
+}
+
+.counter {
+  display: flex;
+  text-align: center;
+  gap: 15px;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 30px;
+  text-transform: uppercase;
+  & div {
+   width: 30px;
+    height: 30px;
+    cursor: pointer;
+    &.disabled {
+      cursor: auto;
+      opacity: .2;
+    }
+  }
+}
